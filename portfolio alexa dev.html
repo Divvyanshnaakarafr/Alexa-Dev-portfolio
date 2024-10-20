@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Divvyansh Kudesiaa - Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+        }
+        h1, h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: #fff;
+            padding: 1em 2em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 2em;
+        }
+        .nav-links a {
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        /* Landing Section */
+        .landing {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            text-align: center;
+            padding: 0 2em;
+        }
+        .landing-text h1 {
+            font-size: 4em;
+            margin-bottom: 0.5em;
+            font-weight: 700;
+        }
+        .landing-text p {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        .profile-picture img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            border: 5px solid #fff;
+        }
+
+        /* About Me Section */
+        #about {
+            padding: 4em 2em;
+            background-color: #ffafbd;
+            background-image: linear-gradient(315deg, #ffafbd 0%, #ffc3a0 74%);
+            text-align: center;
+        }
+        #about h2 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 1em;
+        }
+        #about p {
+            font-size: 1.2em;
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 4em 2em;
+            background-color: #43cea2;
+            background-image: linear-gradient(315deg, #43cea2 0%, #185a9d 74%);
+            color: white;
+        }
+        #projects h2 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 1.5em;
+            color: #fff;
+        }
+        .project-card {
+            background: white;
+            color: #333;
+            padding: 1.5em;
+            border-radius: 10px;
+            margin-bottom: 1.5em;
+            max-width: 800px;
+            margin: 1.5em auto;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+        .project-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2em;
+            background-color: #222;
+            color: #bbb;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: #ff416c;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .landing {
+                flex-direction: column;
+                padding: 2em;
+            }
+            .landing-text h1 {
+                font-size: 2.5em;
+            }
+            .profile-picture img {
+                width: 200px;
+                height: 200px;
+            }
+            .nav-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Divvyansh Kudesiaa</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Landing Page -->
+    <section id="home" class="landing">
+        <div class="landing-text">
+            <h1>Hi, I'm Divvyansh Kudesiaa</h1>
+            <p>Aspiring Software Engineer</p>
+        </div>
+        <div class="profile-picture">
+            <img src="dk.jpeg" alt="Your Picture">
+        </div>
+    </section>
+
+    <!-- About Me Page -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a first-year computer science student passionate about software development, AI, and automation. I'm eager to create impactful projects and work on innovative ideas.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>AI-Powered Tax Summary Generator</h3>
+            <p>Description of the project...</p>
+        </div>
+        <!-- Add more project cards as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Divvyansh Kudesiaa. All rights reserved. | <a href="#home">Back to top</a></p>
+    </footer>
+
+    <script>
+        // Add interactive functionality like smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
